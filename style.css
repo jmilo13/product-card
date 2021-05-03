@@ -18,6 +18,15 @@ body {
 product-card{
   margin: 2rem 0;
 }
-/* product-card {
-  --primary-background: green;
-} */
+product-card.red {
+  --image-background: red;
+  --button-color: red;
+}
+product-card.green {
+  --image-background: green;
+  --button-color: green;
+}
+product-card.orange {
+  --image-background: orange;
+  --button-color: orange;
+}

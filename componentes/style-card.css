@@ -7,20 +7,17 @@
     --button-color: #5a6cb2;
     --text-button-color: #fff;
     max-width: 71rem;
-    font-size: 1.5rem;
 }
 *{
     margin: 0;
     padding:0;
     box-sizing: border-box;
 }
-html{
-    font-size: 62.5%;
-}
 .card{
     max-width: 85%;
     margin: auto;
     background: blue;
+
 }
 .card__image-box{
     position: relative;
@@ -30,7 +27,6 @@ html{
     background: var(--image-background);
 }
 .card__image-box::before{
-    
     position: absolute;
     content:'Nike';
     font-size: 12rem;
@@ -39,7 +35,7 @@ html{
 }
 .card__image{
     width: 80%;
-    min-width: 20rem;
+    min-width: 200px;
     position: relative;
     bottom: -12rem;
     right: -6rem;
@@ -48,8 +44,9 @@ html{
 .card__information{
     display: flex;
     flex-direction: column;
-    padding: 4rem 2rem 2rem 2rem;
+    padding: 4em 2em 2em 2em;
     background: var(--information-background);
+    font-size: 16px
 }
 .card__title{
     padding: 2rem 0;
@@ -86,14 +83,17 @@ html{
     }
     .card__image-box{
         min-width: 45rem;
-        min-height: 64rem;
+        min-height: 60rem;
+    }
+    .card__image-box::before{
+        top: 0;
     }
     .card__image{
         position: absolute;
         width: 73rem;
         transform: rotate(-30deg);
-        bottom: 0;
-        left: -19rem;
+        bottom: -1.9rem;
+        left: -190px;
     }
     .card__information{
         display: flex;

@@ -7,6 +7,7 @@ class ProductCard extends HTMLElement{
       return ['img', 'title', 'collection', 'description', 'price']
     }
     attributeChangedCallback(attribute, oldValue, newValue){
+      if(newValue!==oldValue){
       switch(attribute){
         case 'img':
           this.img = newValue
@@ -24,6 +25,7 @@ class ProductCard extends HTMLElement{
           this.price = newValue
           break
       } 
+    }
     }
     getTemplate(){
       const template = document.createElement('template')
